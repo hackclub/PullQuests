@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff;
-  background: #17171d;
+  background: #000000;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -112,7 +112,6 @@ body {
   margin-bottom: 16px;
 }
 
-.c-red { color: #ec3750; }
 
 .hero-lead {
   font-size: 20px;
@@ -342,7 +341,7 @@ body {
 }
 
 .arrow-orange { color: #ff8c37; }
-.arrow-green  { color: #33d6a6; }
+.arrow-yellow  { color: #f1c40f; }
 
 
 
