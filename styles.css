@@ -229,17 +229,13 @@ body {
   text-decoration: none;
   animation: fadeUp .6s ease both;
 }
-.card:last-child {
-  grid-column: 1 / -1;
-  max-width: calc(60% - 8px);
-  margin: 0 auto;
-}
 
 .card:nth-child(1) { animation-delay: .3s; }
 .card:nth-child(2) { animation-delay: .4s; }
 .card:nth-child(3) { animation-delay: .5s; }
 .card:nth-child(4) { animation-delay: .6s; }
 .card:nth-child(5) { animation-delay: .7s; }
+.card:nth-child(6) { animation-delay: .7s; }
 
 .card-link {
   transition: transform .125s ease-in-out, box-shadow .125s ease-in-out;
@@ -274,6 +270,37 @@ body {
 .card-fix::before {
   background: #f1c40f;
 }
+
+.card-eggsploit::before {
+  background: #ec3750;
+}
+
+.card-eggsploit .card-title {
+  color: #ec3750;
+  font-weight: 800;
+}
+
+.arrow-red { color: #ec3750; }
+
+.glitch-emoji {
+  font-size: 40px;
+  line-height: 1;
+  position: relative;
+  color: #ec3750;
+  display: inline-block;
+  text-shadow: -2px 0 #33d6a6, 2px 0 #5bc0de;
+}
+.glitch-emoji::before,
+.glitch-emoji::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.glitch-emoji::before { transform: translate(-2px,-1px); color: #33d6a6; }
+.glitch-emoji::after  { transform: translate(2px,1px);  color: #5bc0de; }
 
 .card-emoji {
   font-size: 40px;
@@ -342,10 +369,6 @@ body {
 
 .arrow-orange { color: #ff8c37; }
 .arrow-yellow  { color: #f1c40f; }
-
-
-
-
 
 
 footer {
